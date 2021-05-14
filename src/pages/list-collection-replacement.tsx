@@ -1,27 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+const { Link } = Madoc.require('react-router-dom');
 
-export const ListCollectionsReplacement = ({ loader, hooks }: {  loader: any, hooks: any  }) => {
-    const { resolvedData: data } = loader.useCollectionList();
-    const { LocaleString } =  hooks.useComponents();
+export const ListCollectionsReplacement = () => {
+  const { resolvedData: data } = Madoc.useCollectionList();
 
-    if (!data) {
-        return <div>loading...</div>;
-    }
+  if (!data) {
+    return <div>loading...</div>;
+  }
 
-    return (
-        <div>
-            All collections from plugin.
-            <h1>All collections</h1>
-            {(data as any).collections.map((collection: any) => {
-                return (
-                    <div key={collection.id}>
-                        <Link to={`/collections/${collection.id}`}>
-                            <LocaleString>{collection.label}</LocaleString>
-                        </Link>
-                    </div>
-                );
-            })}
-        </div>
-    );
+  return (
+    <div>
+      All collections from plugin.
+      <h1>All collections</h1>
+      {(data as any).collections.map((collection: any) => {
+        return (
+          <div key={collection.id}>
+            <Link to={`/collections/${collection.id}`}>
+              <Madoc.LocaleString>{collection.label}</Madoc.LocaleString>
+            </Link>
+          </div>
+        );
+      })}
+    </div>
+  );
 };

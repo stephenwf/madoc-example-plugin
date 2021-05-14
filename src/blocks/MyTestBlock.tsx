@@ -1,11 +1,10 @@
 import React from 'react';
-import { blockConfigFor } from '../external/block-config-for';
 
-export const MyTestBlock = ({ text }: { text: any }) => {
-    return <div>My test block {text}</div>;
+export const MyTestBlock = ({ text }: { text: string }) => {
+    return <div>My test block. {text}</div>;
 };
 
-blockConfigFor(MyTestBlock, {
+Madoc.blockConfigFor(MyTestBlock, {
     type: 'MyPlugin.MyTestBlock',
     label: 'My test block',
     requiredContext: [],
