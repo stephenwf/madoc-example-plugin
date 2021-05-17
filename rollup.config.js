@@ -12,10 +12,11 @@ export default {
       format: 'umd',
       globals: {
         react: 'React',
+        '@madoc.io/types': 'Madoc',
       },
     },
   ],
-  external: ['react'],
+  external: ['react', '@madoc.io/types'],
   plugins: [
     typescript({ target: 'es5' }),
     resolve({ browser: true }), // so Rollup can find `ms`

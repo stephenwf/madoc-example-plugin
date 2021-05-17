@@ -1,13 +1,14 @@
 import React from 'react';
+import { Button } from '@madoc.io/types';
 
 export const TestPluginPage = ({ loader }: { loader: any }) => {
   const { data } = loader.useData();
 
   return (
     <div>
-      <Madoc.Button>Test button</Madoc.Button>
+      <Button $primary>Test button</Button>
 
-      <h3>Test plugin page.</h3>
+      <h3>Test plugin page?</h3>
 
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>

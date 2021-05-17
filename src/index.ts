@@ -1,3 +1,4 @@
+import '@madoc.io/types';
 import { MyTestBlock } from './blocks/MyTestBlock';
 import { TestPluginPage } from './pages/test-plugin-page';
 import { ListCollectionsReplacement } from './pages/list-collection-replacement';

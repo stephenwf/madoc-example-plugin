@@ -1,5 +1,5 @@
 {
-  "name": "madoc-example-plugin",
+  "name": "@stephenwf/madoc-example-plugin",
   "version": "1.0.0",
   "main": "index.js",
   "description": "Madoc example plugin for demonstrating build process and API",
@@ -14,6 +14,7 @@
     "name": "Madoc example plugin"
   },
   "devDependencies": {
+    "@madoc.io/types": "^0.0.4",
     "@madoc.io/bundler": "1.0.6",
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
