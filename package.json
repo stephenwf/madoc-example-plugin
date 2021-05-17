@@ -1,9 +1,12 @@
 {
   "name": "@stephenwf/madoc-example-plugin",
   "version": "0.0.2",
-  "main": "index.js",
+  "main": "dist/index.js",
   "description": "Madoc example plugin for demonstrating build process and API",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "madoc-bundler --watch",
     "build": "NODE_ENV=production madoc-bundler"
