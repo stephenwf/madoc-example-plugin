@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "@madoc.io/types": "^0.0.4",
-    "@madoc.io/bundler": "1.0.6",
+    "@madoc.io/bundler": "1.0.8",
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "@types/react": "^17.0.5",
