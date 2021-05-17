@@ -1,6 +1,6 @@
 {
   "name": "@stephenwf/madoc-example-plugin",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "main": "index.js",
   "description": "Madoc example plugin for demonstrating build process and API",
   "license": "MIT",
