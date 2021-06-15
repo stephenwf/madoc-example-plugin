@@ -49,10 +49,10 @@
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-1.0.0.tgz#3fdf5798f0b49e90155896f6291df186eac06c83"
   integrity sha512-9oLAnygRMi8Q5QkYEU4XWK04B+nuoXoxjRvRxgjuChkLZFBja0YPSgdZ7dZtwhncLBcQe/I/E+fLuk5qxcYVJA==
 
-"@madoc.io/bundler@1.0.8":
-  version "1.0.8"
-  resolved "https://registry.yarnpkg.com/@madoc.io/bundler/-/bundler-1.0.8.tgz#93034c3c9db81fd7fc50ef78f9e0513b4afc94ab"
-  integrity sha512-GrCwNGfnsvdqsSi/f/thgb+8u0qYh+RAwnaoDHbDdNrpWiz2itplyy4/8wJzGNI5hpoUpU08xV3Ci+Uhz9g4bQ==
+"@madoc.io/bundler@1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@madoc.io/bundler/-/bundler-1.0.9.tgz#aa19b5f624ee8a228c3e99668c516ac0a2d1659d"
+  integrity sha512-EmgtXGwbXHBShhlwZp8q50Mlv4LwY81zmo8goz+520oyF9IOjAznKSH6erj8dzfsS3wh+PzhScHTAt2kKVZIgw==
   dependencies:
     "@ampproject/rollup-plugin-closure-compiler" "^0.26.0"
     "@rollup/plugin-commonjs" "^17.0.0"
