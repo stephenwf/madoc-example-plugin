@@ -5,7 +5,7 @@ import compiler from '@ampproject/rollup-plugin-closure-compiler';
 const isProduction = process.env.NODE_ENV === 'production';
 
 export default {
-  input: 'src/index.ts',
+  input: 'src/plugin.ts',
   output: [
     {
       dir: 'dist',

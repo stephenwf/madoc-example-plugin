@@ -1,11 +1,12 @@
 import React from 'react';
-import { Button } from '@madoc.io/types';
+import { Button, Atoms, useApi, useCollectionList } from '@madoc.io/types';
 
 export const TestPluginPage = ({ loader }: { loader: any }) => {
   const { data } = loader.useData();
 
   return (
     <div>
+      <Atoms.Heading1>Testing page title</Atoms.Heading1>
       <Button $primary>Test button</Button>
 
       <h3>Test plugin page?</h3>
@@ -19,7 +20,7 @@ Madoc.serverRendererFor(TestPluginPage, {
   getKey: () => {
     return ['test', { shouldFindThis: 'testing' }];
   },
-  getData: async () => {
+  getData: async (key, vars, api) => {
     return { test: 'testing' };
   },
 });
