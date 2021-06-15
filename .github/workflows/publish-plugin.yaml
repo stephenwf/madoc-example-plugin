@@ -20,7 +20,7 @@ jobs:
         uses: thedoctor0/zip-release@master
         with:
           filename: 'plugin.zip'
-          directory: path
+          directory: ./dist
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
