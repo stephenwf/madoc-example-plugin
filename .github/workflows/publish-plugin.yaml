@@ -16,12 +16,13 @@ jobs:
           node-version: '12.x'
       - run: yarn install
       - run: yarn build
-      - name: Release
-        uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+      - name: Archive Release
+        uses: thedoctor0/zip-release@master
         with:
-          files: |
-            dist/plugin.js
-            dist/madoc-plugin.json
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          filename: 'plugin.zip'
+          directory: path
+      - name: Upload Release
+        uses: ncipollo/release-action@v1
+        with:
+          artifacts: "plugin.zip"
+          token: ${{ secrets.GITHUB_TOKEN }}
