@@ -18,8 +18,12 @@ jobs:
         with:
           filename: 'plugin.zip'
           directory: ./dist
+      - uses: actions/upload-artifact@v2
+        with:
+          name: plugin-zip
+          path: ./plugin.zip
       - name: Upload Release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "plugin.zip"
+          artifacts: "plugin-zip"
           token: ${{ secrets.GITHUB_TOKEN }}
