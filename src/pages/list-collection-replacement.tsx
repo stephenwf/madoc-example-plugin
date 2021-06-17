@@ -1,5 +1,5 @@
 import React from 'react';
-const { Link } = Madoc.require('react-router-dom');
+import { Link } from 'react-router-dom';
 
 export const ListCollectionsReplacement = () => {
   const { resolvedData: data } = Madoc.useCollectionList();

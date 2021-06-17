@@ -16,7 +16,7 @@ export default {
       },
     },
   ],
-  external: ['react', '@madoc.io/types'],
+  external: ['react', '@madoc.io/types', 'react-router-dom'],
   plugins: [
     typescript({ target: 'es5' }),
     resolve({ browser: true }), // so Rollup can find `ms`

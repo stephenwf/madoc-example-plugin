@@ -14,7 +14,8 @@
   "repository": "https://github.com/stephenwf/madoc-example-plugin",
   "madoc": {
     "id": "7231e23f-80e3-4399-9720-971a6274b67f",
-    "name": "Madoc example plugin"
+    "name": "Madoc example plugin",
+    "thumbnail": "https://user-images.githubusercontent.com/8266711/118507448-25750b80-b726-11eb-9f87-d96f43c0a894.png"
   },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",

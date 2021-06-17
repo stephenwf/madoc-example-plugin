@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Atoms, useApi, useCollectionList } from '@madoc.io/types';
+import { Button, Atoms, serverRendererFor } from '@madoc.io/types';
 
 export const TestPluginPage = ({ loader }: { loader: any }) => {
   const { data } = loader.useData();
@@ -16,7 +16,7 @@ export const TestPluginPage = ({ loader }: { loader: any }) => {
   );
 };
 
-Madoc.serverRendererFor(TestPluginPage, {
+serverRendererFor(TestPluginPage, {
   getKey: () => {
     return ['test', { shouldFindThis: 'testing' }];
   },
