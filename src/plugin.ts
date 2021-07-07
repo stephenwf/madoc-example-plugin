@@ -2,6 +2,7 @@ import '@madoc.io/types';
 import { MyTestBlock } from './blocks/MyTestBlock';
 import { TestPluginPage } from './pages/test-plugin-page';
 import { ListCollectionsReplacement } from './pages/list-collection-replacement';
+import { kitchenSinkTemplate } from './project-templates/kitchen-sink';
 
 export function hookRoutes() {
   return [
@@ -24,3 +25,5 @@ export function hookBlocks() {
     MyTestBlock,
   };
 }
+
+export const projectTemplates = [kitchenSinkTemplate];

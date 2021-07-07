@@ -20,8 +20,9 @@
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
     "@madoc.io/bundler": "1.0.9",
-    "@madoc.io/types": "^0.0.4",
+    "@madoc.io/types": "^0.0.8",
     "@rollup/plugin-node-resolve": "^13.0.0",
+    "react-query": "^2.16.0",
     "@types/react": "^17.0.5",
     "@types/react-router-dom": "^5.1.7",
     "prettier": "^2.3.0",

@@ -6,10 +6,10 @@ export const TestPluginPage = ({ loader }: { loader: any }) => {
 
   return (
     <div>
-      <Atoms.Heading1>Testing page title</Atoms.Heading1>
+      <Atoms.Heading1>Testing page</Atoms.Heading1>
       <Button $primary>Test button</Button>
 
-      <h3>Test plugin page? v14</h3>
+      <h3>Test plugin page? v15</h3>
 
       <pre>{JSON.stringify(data, null, 2)}</pre>
     </div>
