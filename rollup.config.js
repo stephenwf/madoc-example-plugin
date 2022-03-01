@@ -20,6 +20,6 @@ export default {
   plugins: [
     typescript({ target: 'es5' }),
     resolve({ browser: true }), // so Rollup can find `ms`
-    isProduction && compiler(),
+    // isProduction && compiler(),
   ].filter(Boolean),
 };
