@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@ampproject/rollup-plugin-closure-compiler": "^0.26.0",
-    "@madoc.io/bundler": "1.0.9",
+    "@madoc.io/bundler": "1.0.10",
     "@madoc.io/types": "^0.0.8",
     "@rollup/plugin-node-resolve": "^13.0.0",
     "react-query": "^2.16.0",
